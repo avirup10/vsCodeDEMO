@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClosedDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Invoice_Status__c , &apos;Closed&apos;)  &amp;&amp;  ISBLANK( Invoice_Closed_Date__c )</errorConditionFormula>
+    <errorDisplayField>Invoice_Closed_Date__c</errorDisplayField>
+    <errorMessage>Closed Date should not be blank.</errorMessage>
+</ValidationRule>

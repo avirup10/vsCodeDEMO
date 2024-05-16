@@ -1,0 +1,7 @@
+<aura:component controller="AccDetails" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="AccNum" type="string"/>
+    <aura:attribute name="Acc" type="double"/>
+    <ui:inputtext label="Account Number" value="{!v.AccNum}"/>
+    Account Name is : <ui:outputtext value="{!v.Acc}"/><br/>
+    <lightning:button label="Get" onclick="{!c.validate}"/>
+</aura:component>

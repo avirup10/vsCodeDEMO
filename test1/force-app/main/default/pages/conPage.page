@@ -1,0 +1,21 @@
+<apex:page standardController="contact" recordSetVar="con">
+    <marquee>
+        <b style ="color:green;font-size:25px">
+            Welcome {!$User.FirstName}
+        </b>
+    </marquee>
+        <apex:form >
+            <apex:pageBlock >
+            <apex:pageBlockTable var="c" value="{!con}">
+                <apex:column title="Account Name" value="{!c.name}" />
+                <apex:column title="Phone Number" value="{!c.phone}"/>
+            </apex:pageBlockTable>
+           <div style="display:flex;justify-content:right;">
+               <apex:commandButton value="<<" action="{!first}"/>
+               <apex:commandButton value="<" action="{!previous}"/>
+               <apex:commandButton value=">" action="{!next}"/>
+               <apex:commandButton value=">>" action="{!last}"/>
+           </div>
+           </apex:pageBlock>
+           </apex:form>
+          </apex:page>

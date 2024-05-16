@@ -1,0 +1,9 @@
+<aura:component controller="ConCgetDetails" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute name="email" type="string"/>
+    <aura:attribute name="lastName" type="double"/>
+    <aura:attribute name="firstName" type="double"/>
+    <ui:inputtext label="Contact Email" value="{!v.email}"/>
+    First Name is : <ui:outputtext value="{!v.firstName}"/>
+    Last Name is : <ui:outputtext value="{!v.lastName}"/><br/>
+    <lightning:button label="Get" onclick="{!c.validate}"/>
+</aura:component>

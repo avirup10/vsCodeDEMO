@@ -1,0 +1,24 @@
+<apex:page standardController="Merchandise__c">
+<marquee>
+<b style ="color:green;font-size:25px">
+Welcome {!$User.FirstName}
+</b>
+</marquee>
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection columns="3" title="Merchandise">
+<apex:inputField value="{!Merchandise__c.name}" label="Merchandise Name" required="true"/ >
+<apex:inputField value="{!Merchandise__c.Merchandise_Desc__c}" label="Merchandise Desc"/ >
+<apex:inputField value="{!Merchandise__c.Merchandise_Stock__c}" label="Merchandise Stock"/ >
+<apex:inputField value="{!Merchandise__c.Merchandise_Price__c}" label="Merchandise Price"/ >
+<apex:inputField value="{!Merchandise__c.Approval_Status__c}" label="Approval Status"/ >
+<apex:inputField value="{!Merchandise__c.Country__c}" label="Country"/ >
+<apex:inputField value="{!Merchandise__c.State__c}" label="State"/ >
+</apex:pageBlockSection>
+<apex:pageBlockButtons >
+<apex:commandButton value="Save" action="{!save}"/>
+<apex:commandButton value="Cancel" action="{!cancel}"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

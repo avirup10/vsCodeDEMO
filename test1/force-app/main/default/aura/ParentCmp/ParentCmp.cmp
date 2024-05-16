@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    This is a Parent Component.
+    <aura:handler name="registerEvent" event="c:eventDemo" action="{!c.handleEvent}"/>
+    <aura:attribute name="childmsg" type="String"/>
+    <p>Child Message: <lightning:formattedtext value="{!v.childmsg}"/></p>
+    <c:ChildCmp Name="Avirup" Age="23" Height="170" />
+</aura:component>

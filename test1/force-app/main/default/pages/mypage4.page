@@ -1,0 +1,13 @@
+<apex:page controller="myAcc">
+<apex:form >
+    <apex:pageBlock >
+    <apex:pageBlockSection >
+        <apex:inputtext value="{!myAcc.name}"/>
+    </apex:pageBlockSection>
+    <apex:pageBlockButtons >
+        <apex:commandButton value="Save or Update" action="{!saveorupdate}"/>
+    </apex:pageBlockButtons>
+    </apex:pageBlock>
+
+</apex:form>  
+</apex:page>

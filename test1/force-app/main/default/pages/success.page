@@ -1,0 +1,4 @@
+<apex:page >
+  
+  <h1>Congratulations. Your record has been created/updated.</h1>
+</apex:page>

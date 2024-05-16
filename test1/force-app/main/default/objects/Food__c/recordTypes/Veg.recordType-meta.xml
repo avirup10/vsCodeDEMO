@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Veg</fullName>
+    <active>true</active>
+    <label>Veg</label>
+    <picklistValues>
+        <picklist>Food_Type__c</picklist>
+        <values>
+            <fullName>Non Veg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Veg</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Non_Veg__c</picklist>
+        <values>
+            <fullName>Chicken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mutton</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Veg__c</picklist>
+        <values>
+            <fullName>Gobi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mushroom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paneer</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Get Contact Details" icon-name="custom:custom14">
+      <ul class="slds-m-around_medium">
+        <template for:each={conc.data} for:item="c">
+          <li key={c.Id}>{c.LastName}</li>
+        </template>
+      </ul>
+      <div class="slds-m-around_medium">
+        <!-- Conditionally render the button -->
+        <template if:true={showButton}>
+        <lightning-button label="Click Me" onclick={handleClick} variant="brand"></lightning-button>
+        </template>
+        </div>
+        <div class="slds-m-around_medium">
+            <template if:true={showButton1}>
+                <lightning-button label="Click Me Again" onclick={handleClick1} variant="brand"></lightning-button>                
+            </template>
+        
+            <template if:true={showButton2}>
+                <lightning-button label="Disable them" onclick={handleClick2} variant="brand"></lightning-button>                
+            </template>
+        
+            <template if:true={showButton3}>
+                <lightning-button label="Enable them" onclick={handleClick3} variant="brand"></lightning-button>                
+            </template>
+        </div>
+    </lightning-card>
+</template>

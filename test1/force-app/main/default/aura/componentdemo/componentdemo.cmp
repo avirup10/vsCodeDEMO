@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	Welcome to Demo of Aura Components.
+    <aura:attribute name="Amount" type="double"/>
+    <ui.inputNumber label="Enter Amount" value="{!v.Amount}"/>
+    <aura:attribute name="Tenure" type="double"/>
+    <ui.inputNumber label="Enter Tenure" value="{!v.Tenure}"/>
+    <aura:attribute name="Duration" type="double"/>
+    <ui.inputNumber aura:id="duration" label="Enter Duration" value="{!v.Duration}"/>
+    <aura:handler name="change" value="{!v.Duration}" action="{!c.validate}"/>
+    <aura:attribute name="Return" type="double"/>
+    Interest: <ui.outputNumber value="{!v.Return}"/><br></br>
+    <ui:button label="Calculate Return" press="{!c.calculate}"/>
+</aura:component>

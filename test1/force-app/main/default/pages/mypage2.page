@@ -1,0 +1,16 @@
+<apex:page standardController="Invoice__c">
+  <apex:form >
+      <apex:pageBlock >
+          <apex:pageblocksection title="Information">
+              <apex:inputfield value="{!Invoice__c.Invoice_Desc__c}" label="Invoice Desc"/>
+              <apex:inputfield value="{!Invoice__c.ownerid}" label="Owner" html-disabled="true"/>
+              <apex:inputfield value="{!Invoice__c.Invoice_Status__c}" label="Invoice Status"/>
+              <apex:inputfield value="{!Invoice__c.Invoice_Closed_Date__c}" label="Invoice Closed Date"/>
+          </apex:pageblocksection>
+          <apex:pageblockbuttons >
+          <apex:commandButton action="{!save}" value="Save" />
+          <apex:commandButton action="{!save}" value="Cancel" />
+          </apex:pageblockbuttons>
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

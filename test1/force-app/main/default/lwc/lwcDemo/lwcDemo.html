@@ -1,0 +1,10 @@
+<template>
+    <h1>Welcome to LWC Demo.</h1>
+    <div class="container">
+    <p><lightning-input type="text" name="name" label="Name" onchange={handleChange} value={name}></lightning-input>
+       <lightning-input type="number" name="age" label="Age" onchange={handleChange} value={age}></lightning-input>
+       <lightning-input type="text" name="email" label="Email" onchange={handleChange} value={email}></lightning-input>
+       <lightning-input type="text" name="skillset" label="Skill-Set" onchange={handleChange} value={skillset}></lightning-input></p>
+       <lightning-button label="submit" title="Click Here" onclick={handleClick}></lightning-button>
+    </div>
+</template>

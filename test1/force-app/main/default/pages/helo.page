@@ -1,0 +1,19 @@
+<apex:page controller="mydata">
+  <apex:form >
+  
+          <apex:pageBlock >
+          
+                 <apex:pageblocksection title="Contact Details" columns="3" >
+                 
+                         <apex:inputtext value="{!mydata.firstname}" label="First Name"/>
+                         <apex:inputtext value="{!mydata.lastname}" label="Last Name" required="true"/>
+                         <apex:inputtext value="{!mydata.phone}" label="Phone"/>
+                 
+                 </apex:pageblocksection>
+                 <apex:pageblockButtons >
+                     <apex:commandButton value="Save" action="{!saveit}"/>
+                 </apex:pageblockButtons>
+          </apex:pageBlock>
+      
+  </apex:form>
+</apex:page>

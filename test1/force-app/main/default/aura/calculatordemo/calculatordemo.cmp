@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<ltng:require scripts="{!$Resource.auraResource}"/>
+    Welcome to my Calculator!
+    <aura:attribute name="num1" type="double"/>
+    <aura:attribute name="res" type="double"/>
+    <ui.inputNumber label="Enter the number" value="{!v.num1}"/>
+    Result: <ui.outputNumber value="{!v.res}"/><br></br>
+    <ui:button label="+" press="{!c.add}"/>
+    <ui:button label="=" press="{!c.equal}"/>
+</aura:component>
